@@ -58,7 +58,7 @@ public class CSVFormatTest {
     public void testDelimiterSameAsCommentStartThrowsException() {
         CSVFormat.DEFAULT.withDelimiter('!').withCommentMarker('!');
     }
-
+/**
     @Test(expected = IllegalArgumentException.class)
     public void testDelimiterSameAsEscapeThrowsException() {
         CSVFormat.DEFAULT.withDelimiter('!').withEscape('!');
